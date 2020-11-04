@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Vaskó Bence">
+<title>Taktikus csapatharc</title>
+<link rel="stylesheet"  type="text/css" href="style.css">
+<link rel="icon" href="icons/tfticon.png" type="image/png">
+</head>
+<body>
+<div class="bgimg1">
+<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="arrowup.png" id="arrowup" alt="fel"></button>
+<script>
+//gomb
+var mybutton = document.getElementById("myBtn");
+// 200px után mutatja a gombot
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// Feltekerés
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+	<header>
+	<a href="https://eune.leagueoflegends.com/hu/" target="_blank"><img id="lollogo" src="resize.png" alt="lollogo"></a>
+	<div class="menu">
+            <a href="index.html">FŐOLDAL</a>
+			<a href="kislegendak.html">KIS LEGENDÁK</a>
+			<a href="hosok.html">HŐSÖK</a>
+			<a href="varazs.html">VARÁZSTÁRGYAK</a>
+	</div>
+	</header>
+
+	<div class="space"></div>
+	<div class="main">
+		<div><p><img id="logo" src="divkepek/Teamfight_Tactics_logo.png" alt="logo"><br>Taktikus csapatharc</p></div>
+
+		<div class="aldiv">
+			<q>A Szövetség töredezett, álomszerű világában játszódó Taktikus csapatharc 
+			egy vadonatúj LoL-játékmód, amelyben hét ellenféllel versenyzel az egyeduralomért.
+			Állítsd össze a legjobb csapatot, tedd őket még erősebbé, és nézd, ahogy harcba  indulnak.
+			Ha elég ügyes vagy, a végén csak te maradsz talpon.</q>
+		</div>
+		<h1>JÁTÉKMENET</h1>
+		<div class="altarolo">
+			 <h2>Kicsi legendák</h2>
+			 <div class="aldiv">
+			  <q>A Kicsi legendád fog képviselni téged a Taktikus csapatharcban. 
+				A Taktikus csapatharcban való részvétellel újabb Kicsi legendákra tehetsz szert,
+				illetve meg is veheted őket a League of Legends boltjában.  Kicsi legendáid között a játék 
+				előszobájában, a meccs kezdete előtt válthatsz. A Kicsi legendát a jobb gombbal mozgathatod
+				az arénában, és ugyanúgy használhatsz vele hangulatjeleket, mint bármelyik LoL-játékmódban.</q>
+				<img id="kislegendak" src="divkepek/kislegendak.jpg" alt="kislegendak">
+				
+			 </div>
+		</div>
+		
+		<div class="altarolo">
+			 <h2>Vezérlők</h2>
+			 <div class="tores"></div>
+			 <h3>Az irányítás alapjai</h3>
+			 <div class="aldiv">
+			  <q>Szinte mindent el tudsz végezni a bal egérgombbal.</q>
+				 <ul>
+					<li>A hősöket húzással tudod mozgatni a csatamező pontjai között, illetve a csatamező és a kispad között.</li>
+					<li>Kattints a tárgyakra, és húzd azokat a kívánt hősre.</li>
+					<li>A hősöket bal kattintással tudod megvenni a boltban.</li>
+					<li>A hős eladásához kattints a hősre, és húzd vissza a boltba.</li>
+					<li>A kistérképre vagy az eredményjelzőre kattintva nézheted meg más játékosok arénáit.</li>
+				 </ul>
+				 <q>Jobb kattintással jelölheted ki, hogy hova szeretnéd küldeni a Kicsi legendádat.</q>
+					<ul><li>Jobb kattintással vizsgálhatod meg a hősöket, hogy részletes információt kapj róluk.</li></ul>					
+			 </div>
+			 <div class="tores"></div>
+			 <h3>További irányítási lehetőségek</h3>
+			 <div class="aldiv">
+				<ul>
+					<li><span class="bold">W </span>– Nyomd le, amikor egy hősre mutatsz. Ezzel a hőst a kispadról a csatamezőre helyezed, vagy hazateleportálod a csatamezőről a kispadra.</li>
+					<li><span class="bold">E </span>– Eladod a hőst, akire éppen mutatsz.</li>
+					<li><span class="bold">1 és 2 </span>– Ezekkel a billentyűkkel válthatsz az egyes játékosok arénái között. Az „1”-es billentyűvel a következő, a „2”-es billentyűvel az előző arénára ugrasz.</li>
+					<li><span class="bold">Szóköz </span>– A kamera a Kicsi legendára fókuszál, bárhol is jár éppen. Többnyire az arénádban tartózkodik.</li>
+				</ul>
+			 </div>
+		</div>
+		
+		
+		<div class="altarolo">
+		<h2>Saját aréna</h2>
+		<div><img class="sajatarena" src="divkepek/sajatarena.jpg" alt="sajatarena"></div>
+		<div class="aldiv">
+		<ol>
+			<li>Kicsi legenda
+				<ul>
+					<li>A Kicsi legendád mindig itt van. Köszönj neki!</li>
+				</ul>
+			</li>
+			<li>Csatamező
+				<ul>
+					<li>Itt zajlanak a harcok. A hőseidet a hozzád közeli sorokban helyezheted el. Az ellenfél a felső részen helyezheti el a saját csapatát.</li>
+				</ul>
+			</li>
+			<li>Kispad
+				<ul>
+					<li>A megvásárolt hősök idekerülnek, mielőtt bevetnéd őket a csatamezőn.</li>
+				</ul>
+			</li>
+			<li>Bolt
+				<ul>
+					<li>A bolt véletlenszerű hősöket (akár dupla példányokat) kínál eladásra egy közös készletből. A dupla példányokat egyesítve létrehozhatod a hős egy erősebb változatát (erről később részletesebben írunk).</li>
+					<li><span class="bold">A bolt zárolása/feloldása: </span>zárolhatod a boltot, hogy ne frissüljön automatikusan a kör elején. Ez akkor lehet hasznos, ha van valami a kínálatban, amit meg szeretnél venni, de épp nincs ehhez elég aranyad.</li>
+					<li><span class="bold">Frissítés: </span>egy kis arany befizetésével azonnal frissítheted a boltban lévő hősöket. Ez automatikusan megtörténik a körök elején, de néha további lehetőségre lehet szükséged.</li>
+					<li><span class="bold">TP vásárlása: </span>aranyért tapasztalati pontokat vehetsz. Minél magasabb a szinted, annál több (erősebb és drágább) hőst állíthatsz csatasorba.</li>
+				</ul>
+			<li>Adottságok követése
+				<ul>
+					<li>Nyomon követheted azokat az osztálybónuszokat, amelyekre jogosultak lehetnek a hőseid.</li>
+				</ul>
+			</li>
+			<li>Fegyvertár
+				<ul>
+					<li>de kerülnek a tárgyak, mielőtt egy hősnek adod azokat (ehhez húzd át azokat egy hősre). Ha eladsz egy hőst, akinél egy tárgy volt, a tárgy ide kerül vissza.</li>
+				</ul>
+			</li>
+			<li>Aranytermelők
+				<ul>
+					<li>A nálad lévő aranymennyiségtől függően aranytermelők jelennek meg. Minden aranytermelő egy aranyat ad kamatként a következő kör elején.</li>
+				</ul>
+			</li>
+			<li>Eredményjelző
+				<ul>
+					<li>Itt látható a játékban részt vevő játékosok életereje. A játékosokra kattintva megnézheted az arénájukat.</li>
+				</ul>
+			</li>
+			<li>Szakasz követése
+				<ul>
+					<li>Számon tartja, hogy hány kört nyertél meg az adott szakaszban, hányat veszítettél el, és hány van még hátra.</li>
+				</ul>
+			</li>
+			<li>Fázis követése
+				<ul>
+					<li>Mutatja, hogy épp melyik fázisban jársz, és hogy mennyi idő van belőle hátra.</li>
+				</ul>
+			</li>
+			<li>Az ellenfél oldala
+				<ul>
+					<li>Amikor szembenézel egy ellenséges csapattal, látni fogod a kispadját, a fegyvertárát és az aranytermelőit. És persze a Kicsi legendáját.</li>
+				</ul>
+			</li>
+			</ol>		
+		</div >
+		</div>
+		
+		
+		
+		<div class="altarolo">
+			<h2>Játékosokra épülő mechanizmusok</h2>
+			<div class="tores"></div>
+			<h3>Életerő</h3>
+			<div class="aldiv">
+				<q>A játékot 100 életerővel kezded. Amikor elveszítesz egy csatát, attól függően veszítesz 
+				életerőt, hogy hány ellenséges hős maradt életben, és hogy milyen erősek voltak. 
+				Ha az életerőd nullára csökken, kiesel a játékból, a hőseid visszakerülnek a közös készletbe,
+				és megveheti őket a többi játékos.</q>
+			</div>	
+			<div class="tores"></div>
+			<h3>Arany</h3>
+			<div class="aldiv">
+				<q>Az arany lesz az elsődleges erőforrás, amely több célt is szolgál:</q>
+				<ul>
+					<li>Hősök vásárlása.</li>
+					<li>A bolt frissítése.</li>
+					<li>Tapasztalati pontok vásárlása a gyorsabb szintlépéshez.</li>
+				</ul>
+				<q>Aranyat több módon lehet szerezni:</q>
+				<ul>
+					<li>Automatikusan, minden kör elején.</li>
+					<li>Kamatként, a körök elején attól függően, hogy hány aranytermelőd van.</li>
+					<li>Bónuszként, a körök elején, ha győztes VAGY vesztes szériád van.</li>
+					<li>Azonnal, amint megnyersz egy PvP-kört.</li>
+				</ul>
+				<q>Aranyat kapsz azon eladott hősök után, akikre már nincsen szükséged. Az erősebb hősök esetében nem kapod vissza a teljes vételárat, csak annak egy részét.</q>
+			</div>
+			<div class="tores"></div>
+			<h3>Szintlépés</h3>
+			<div class="aldiv">
+				<q>Minden játékos az 1. szintről indul, és a meccs során fejlődve legfeljebb a 9. szintig juthat.
+				   A szinteddel egyező számú hős lehet a csapatodban, és a magasabb szinteken egyre erősebb hősökhöz férhetsz hozzá.<br>
+				   Minden kör végén kapsz némi tapasztalatot, épp annyit, hogy a játék korai szakaszában elkezdhess szinteket lépni.
+				   Azonban a meccs későbbi szakaszában már aranyért kell tapasztalati pontokat vásárolnod, hogy tovább bővíthesd a csapatodat.</q>
+			</div>
+		</div>
+		<div class="altarolo">
+			<h2>A játék felépítése</h2>
+			<div class="tores"></div>
+			<h3>Szakaszok</h3>
+			<div class="aldiv">
+					<q>A Taktikus csapatharc szakaszokra tagolódik, amelyek több körből állnak.</q>
+			</div>
+			<h3>Körök</h3>
+			<div class="aldiv">
+					<q>A körök többnyire egy tervezési fázisból és egy harci fázisból állnak.</q>
+			</div>
+			<div class="tores"></div>
+			<h3>Tervezési fázis</h3>
+			<div class="aldiv">
+					<q>A tervezési fázis elején több dolog is történik automatikusan.</q>
+					<ul>
+						<li>Aranyat kapsz.</li>
+						<li>A bolt új hősökkel frissül (kivéve, ha zároltad).</li>
+					</ul>
+					<q>A tervezési fázis során 30 másodperced van hősöket vásárolni, frissíteni a boltot (ha szükségesnek érzed), 
+						valamint elhelyezni a hőseidet a csatamezőn.</q>
+			</div>
+			<div><img class="sajatarena" src="divkepek/tervezes.jpg" alt="tervezes"></div>
+			<div class="aldiv">
+					<q>A tervezési fázis után véglegessé válik a csapat összetétele, és készen állsz a harcra.<br>
+						A hősök elhelyezésekor vedd figyelembe az erősségeiket és a gyenge pontjaikat. 
+						A szívósabbakat tedd az első sorba, és helyezd mögéjük a sebezhetőbbeket. De légy óvatos – vannak hősök,
+						akik képesek közvetlenül támadni a hátsó sorokat.</q>
+			</div>
+			<div class="tores"></div>
+			<h3>Harci fázis</h3>
+			<div class="aldiv">
+					<q>A Taktikus csapatharc döntően PvP-körökből áll, amelyek során véletlenszerűen választott ellenfelekkel kell megküzdened.
+						A harci fázis a tervezési fázis után következik. A Kicsi legendád és a hősökből álló csapatod az ellenfél arénájába teleportál,
+						vagy az ellenfél érkezik hozzád. A harci fázis akkor ér véget, ha lezárult a kör összes csatája (eldől a győztes és a vesztes személye), 
+						vagy ha lejár a kiszabott idő. Ha a csata nem fejeződik be időben, mindkét játékos az ellenfél még életben lévő hőseinek száma alapján szenved el sebzést.</q>
+			</div>
+			<div><img class="sajatarena" src="divkepek/harc.jpg" alt="pvp"></div>
+			<div class="tores"></div>
+			<h3>Duplikált csapatok</h3>
+			<div class="aldiv">
+					<q>Ha páratlan számú játékos maradt versenyben (hét, öt vagy három) egy PvP-körben, az egyik csapatról egy duplikátum készül,
+						hogy páros számú csapat legyen. A duplikált csapat bárkivel összekerülhet, kivéve azt a csapatot, amelyről a duplikátumot készítette a rendszer.
+						Ha megnyeri a harcot, ugyanúgy sebzést okoz az ellenfelének, mint egy valódi csapat. Ha veszít, semmi sem történik, mivel amúgy is eltűnik a kör végén.</q>
+			</div>
+			<div class="tores"></div>
+			<h3>Harci fázis (PvE)</h3>
+			<div class="aldiv">
+					<q>Néha PvE-köröket kell játszani, ilyenkor a játékos a mesterséges intelligencia által irányított szörnyekkel küzd meg.
+						A játékok első három köre mindig PvE, és azt követően a legtöbb szakasz utolsó köre is az lesz. A legyőzött szörnyek néha tárgyakat 
+						hagynak hátra, amelyeket a hőseidnek adhatsz.</q>
+			</div>
+			<div><img class="sajatarena" src="divkepek/harc2.jpg" alt="pve"></div>
+			<div class="tores"></div>
+			<h3>Közös draft</h3>
+			<div class="aldiv">
+					<q>A játék elején, majd további körökben a játékosok közös draftban vesznek részt. 
+						A közös draft során minden játékos a Szövetség központi szigetére teleportál, 
+						ahol egy ingyenes hőst szerezhet magának a véletlenszerű felhozatalból. Rohanj neki annak a hősnek
+						a Kicsi legendáddal, akit meg szeretnél szerezni, de légy óvatos: a Kicsi legendák az elsőként megérintett hőst veszik fel, 
+						nincs második lehetőség! A későbbi közös draftokban az alacsonyabb életerejű játékosok választhatnak először.</q>
+			</div>
+			<div><img class="sajatarena" src="divkepek/draft.jpg" alt="draft"></div>
+		</div>
+		<div class="altarolo">
+		<h2>A játék elemei</h2>
+		<div class="aldiv">
+			<q>Minden egyes az Elemek felemelkedése-játék véletlenszerűen kiemel egy elemet: 
+				Tűzcsóva, Óceáni, Hegyi vagy Szél. A játék eleme a forgótár közepén található
+				és van néhány hatása. </q></div>
+		<div class="aldiv">
+			<q>Először is Qiyana eleme megfelel a játék elemének. Másodszor a Sárkány elleni harc az elemi sárkánnyal folyik, ami megfelel a játék elemének.
+				Végül pedig a játék eleme irányítja az új elemi mező működését.</q></div>
+		<div class="aldiv">
+			<q>Amikor betöltöd a Szövetséget, egy véletlenszerű mező fel lesz ruházva a játék elemével, és minden körben erősíti azt a hőst,
+				aki ezen kezd harcolni. Amikor a játék a 3-1 szakaszba jut, egy második elemi mező is létrejön.
+				Mind a nyolc játékos tábláján ugyanazok a mezők lesznek kiválasztva.</q></div>
+		
+		
+		<div class="aldiv">
+		 <q> Az elemi mezők a következő hatásokat biztosítják:</q>
+			<ul>
+				<li>Tűzcsóva: Növeli a támadási sebességet a harc időtartamára.</li>
+				<li>Óceáni: További manával kezded a harcot.</li>
+				<li>Hegyi: Végleges életerőre tehetsz szert, amely a körök között halmozódik, és megmarad akkor is, ha a hős ellép az elemi mezőről.</li>
+				<li>Szél: Növeli a kitérési esélyt a harc idejére.</li>
+			</ul>
+			<q>Ne felejtsd, hogy az elemi mezők erősítései egy tárgyhelyet elfoglalnak.
+			Ha egy három tárggyal rendelkező hős egy elemi mezőn harcba kezd, nem kap erősítést.</q>
+			<table>
+			<tr >
+				<td><img class="elements" src="divkepek/inferno.png" alt="inferno"></td>
+				<td><img class="elements" src="divkepek/ocean.png" alt="ocean"></td>
+				<td><img class="elements" src="divkepek/mountain.png" alt="mountain"></td>
+				<td><img class="elements" src="divkepek/cloud.png" alt="cloud"></td>
+			</tr>
+			</table>
+		</div>
+		</div>
+	</div>
+
+<div class="valasztf"></div>
+<footer>
+<div class="elerhetosegek">
+<a href="https://www.youtube.com/user/LeagueofLegendsHU" target="_blank"><img class="media" src="multi/youtube.png" alt="youtube" ></a>
+<a href="https://twitter.com/leagueoflegends" target="_blank"><img class="media" src="multi/twitter.png" alt="twitter"></a>
+<a href="https://www.facebook.com/LeagueofLegendsHungary" target="_blank"><img class="media" src="multi/facebook.png" alt="facebook"></a>
+</div>
+<div class="referenciak">
+<a href="https://eune.leagueoflegends.com/hu/news/game-updates/gameplay/teamfight-tactics-gameplay-guide" target="_blank"><img class="media" src="icons/tfticon.png" alt="Tft2"></a>
+<a href="https://leagueoflegends.fandom.com/wiki/Little_Legends_(Teamfight_Tactics)" target="_blank"><img class="media" src="eggs/series5.png" alt="Tft2"></a>
+</div>
+<div class="referencia">Referenciák:</div>
+</footer>
+</div>
+</body>
+</html>

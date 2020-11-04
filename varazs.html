@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<title>Kis Legendák</title>
+<link rel="stylesheet"  type="text/css" href="style.css">
+<link rel="icon" href="icons/sword.png" type="image/jpeg">
+</head>
+<body id="body">
+<div class="bgimg4">
+<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="arrowup.png" id="arrowup" alt="fel"></button>
+<script>
+//gomb rész
+var mybutton = document.getElementById("myBtn");
+// 200px után mutatja a gombot
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// Feltekerés
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+	<header>
+	
+	<a href="https://eune.leagueoflegends.com/hu/" target="_blank"><img id="lollogo" src="resize.png" alt="lollogo"></a>
+	<div class="menu">
+            <a href="index.html">FŐOLDAL</a>
+			<a href="kislegendak.html">KIS LEGENDÁK</a>
+			<a href="hosok.html">HŐSÖK</a>
+			<a href="varazs.html">VARÁZSTÁRGYAK</a>
+	</div>
+	</header>
+
+<h1>Varázstárgyak</h1>
+
+<div class="main">
+<table id="varazstable">
+	<tr>
+		<td id="nelasd"></td>
+		<th><a href="#vest"><img class="varazsimg" src="icons/vest.png" alt="vest"></a></th>
+		<th><a href="#bow"><img class="varazsimg" src="icons/bow.png" alt="bow"></a></th>
+		<th><a href="#konny"><img class="varazsimg" src="icons/tear.png" alt="tear"></a></th>
+		<th><a href="#palast"><img class="varazsimg" src="icons/cloak.png" alt="cloak"></a></th>
+		<th><a href="#boksz"><img class="varazsimg" src="icons/glove.png" alt="glove"></a></th>
+		<th><a href="#spatula"><img class="varazsimg" src="icons/spatula.png" alt="spatula"></a></th>
+		<th><a href="#kard"><img class="varazsimg" src="icons/sword.png" alt="sword"></a></th>
+		<th><a href="#belt"><img class="varazsimg" src="icons/belt.png" alt="belt"></a></th>
+		<th><a href="#rod"><img class="varazsimg" src="icons/rod.png" alt="rod"></a></th>
+	</tr>
+	<tr>
+		<th><a href="#vest"><img class="varazsimg" src="icons/vest.png" alt="vest"></a></th>
+		<td><a href="#tuske"><img class="varazsimg" src="icons/tuske.png" alt="tuske"></a></td>
+		<td><a href="#fantom"><img class="varazsimg" src="icons/fantom.png" alt="fantom"></a></td>
+		<td><a href="#frozen"><img class="varazsimg" src="icons/frozen.png" alt="frozen"></a></td>
+		<td><a href="#kardtoro"><img class="varazsimg" src="icons/kardtoro.png" alt="kardtoro"></a></td>
+		<td><a href="#gauntlet"><img class="varazsimg" src="icons/gauntlet.png" alt="gauntlet"></a></td>
+		<td><a href="#melleny"><img class="varazsimg" src="icons/melleny.png" alt="melleny"></a></td>
+		<td><a href="#orangyal"><img class="varazsimg" src="icons/orangyal.png" alt="orangyal"></a></td>
+		<td><a href="#redbuff"><img class="varazsimg" src="icons/redbuff.png" alt="redbuff"></a></td>
+		<td><a href="#solari"><img class="varazsimg" src="icons/solari.png" alt="solari"></a></td>
+	</tr>
+	<tr>
+		<th><a href="#bow"><img class="varazsimg" src="icons/bow.png" alt="bow"></a></th>
+		<td><a href="#fantom"><img class="varazsimg" src="icons/fantom.png" alt="fantom"></a></td>
+		<td><a href="#rapid"><img class="varazsimg" src="icons/rapid.png" alt="rapid"></a></td>
+		<td><a href="#statikk"><img class="varazsimg" src="icons/statikk.png" alt="statikk"></a></td>
+		<td><a href="#runaan"><img class="varazsimg" src="icons/runaan.png" alt="runaan"></a></td>
+		<td><a href="#repeater"><img class="varazsimg" src="icons/repeater.png" alt="repeater"></a></td>
+		<td><a href="#botrk"><img class="varazsimg" src="icons/botrk.png" alt="botrk"></a></td>
+		<td><a href="#giant"><img class="varazsimg" src="icons/giant.png" alt="giant"></a></td>
+		<td><a href="#titanic"><img class="varazsimg" src="icons/titanic.png" alt="titanic"></a></td>
+		<td><a href="#guinsoo"><img class="varazsimg" src="icons/guinsoo.png" alt="Guinsoo"></a></td>
+	</tr>
+	<tr>
+		<th><a href="#tear"><img class="varazsimg" src="icons/tear.png" alt="tear"></a></th>
+		<td><a href="#frozen"><img class="varazsimg" src="icons/frozen.png" alt="frozen"></a></td>
+		<td><a href="#statikk"><img class="varazsimg" src="icons/statikk.png" alt="statikk"></a></td>
+		<td><a href="#seraph"><img class="varazsimg" src="icons/seraph.png" alt="seraph"></a></td>
+		<td><a href="#csitt"><img class="varazsimg" src="icons/csitt.png" alt="csitt"></a></td>
+		<td><a href="#igazsag"><img class="varazsimg" src="icons/igazsag.png" alt="igazsag"></a></td>
+		<td><a href="#sapka"><img class="varazsimg" src="icons/sapka.png" alt="sapka"></a></td>
+		<td><a href="#shojin"><img class="varazsimg" src="icons/shojin.png" alt="shojin"></a></td>
+		<td><a href="#megvaltas"><img class="varazsimg" src="icons/megvaltas.png" alt="megvaltas"></a></td>
+		<td><a href="#luden"><img class="varazsimg" src="icons/luden.png" alt="luden"></a></td>
+	</tr>
+	<tr>
+		<th><a href="#cloak"><img class="varazsimg" src="icons/cloak.png" alt="cloak"></a></th>
+		<td><a href="#kardtoro"><img class="varazsimg" src="icons/kardtoro.png" alt="kardtoro"></a></td>
+		<td><a href="#runaan"><img class="varazsimg" src="icons/runaan.png" alt="runaan"></a></td>
+		<td><a href="#csitt"><img class="varazsimg" src="icons/csitt.png" alt="csitt"></a></td>
+		<td><a href="#karom"><img class="varazsimg" src="icons/karom.png" alt="karom"></a></td>
+		<td><a href="#qss"><img class="varazsimg" src="icons/qss.png" alt="qss"></a></td>
+		<td><a href="#feny"><img class="varazsimg" src="icons/feny.png" alt="feny"></a></td>
+		<td><a href="#bt"><img class="varazsimg" src="icons/bt.png" alt="bt"></a></td>
+		<td><a href="#zefir"><img class="varazsimg" src="icons/zefir.png" alt="zefir"></a></td>
+		<td><a href="#szikra"><img class="varazsimg" src="icons/szikra.png" alt="szikra"></a></td>
+	</tr>
+	<tr>
+		<th><a href="#glove"><img class="varazsimg" src="icons/glove.png" alt="glove"></a></th>
+		<td><a href="#gauntlet"><img class="varazsimg" src="icons/gauntlet.png" alt="gauntlet"></a></td>
+		<td><a href="#repeater"><img class="varazsimg" src="icons/repeater.png" alt="repeater"></a></td>
+		<td><a href="#igazsag"><img class="varazsimg" src="icons/igazsag.png" alt="igazsag"></a></td>
+		<td><a href="#qss"><img class="varazsimg" src="icons/qss.png" alt="qss"></a></td>
+		<td><a href="#tolvaj"><img class="varazsimg" src="icons/tolvaj.png" alt="tolvaj"></a></td>
+		<td><a href="#cleaver"><img class="varazsimg" src="icons/cleaver.png" alt="cleaver"></a></td>
+		<td><a href="#edge"><img class="varazsimg" src="icons/edge.png" alt="edge"></a></td>
+		<td><a href="#csapda"><img class="varazsimg" src="icons/csapda.png" alt="csapda"></a></td>
+		<td><a href="#jewel"><img class="varazsimg" src="icons/jewel.png" alt="jewel"></a></td>
+	</tr>
+	<tr>
+		<th><a href="#spatula"><img class="varazsimg" src="icons/spatula.png" alt="spatula"></a></th>
+		<td><a href="#melleny"><img class="varazsimg" src="icons/melleny.png" alt="melleny"></a></td>
+		<td><a href="#botrk"><img class="varazsimg" src="icons/botrk.png" alt="botrk"></a></td>
+		<td><a href="#sapka"><img class="varazsimg" src="icons/sapka.png" alt="sapka"></a></td>
+		<td><a href="#feny"><img class="varazsimg" src="icons/feny.png" alt="feny"></a></td>
+		<td><a href="#cleaver"><img class="varazsimg" src="icons/cleaver.png" alt="cleaver"></a></td>
+		<td><a href="#forceof"><img class="varazsimg" src="icons/forceof.png" alt="forceof"></a></td>
+		<td><a href="#youmuu"><img class="varazsimg" src="icons/youmuu.png" alt="youmuu"></a></td>
+		<td><a href="#jegkalapacs"><img class="varazsimg" src="icons/jegkalapacs.png" alt="jegkalapacs"></a></td>
+		<td><a href="#cinder"><img class="varazsimg" src="icons/cinder.png" alt="cinder"></a></td>
+	</tr>
+	<tr>
+		<th><a href="#kard"><img class="varazsimg" src="icons/sword.png" alt="sword"></a></th>
+		<td><a href="#orangyal"><img class="varazsimg" src="icons/orangyal.png" alt="orangyal"></a></td>
+		<td><a href="#giant"><img class="varazsimg" src="icons/giant.png" alt="giant"></a></td>
+		<td><a href="#shojin"><img class="varazsimg" src="icons/shojin.png" alt="shojin"></a></td>
+		<td><a href="#bt"><img class="varazsimg" src="icons/bt.png" alt="bt"></a></td>
+		<td><a href="#edge"><img class="varazsimg" src="icons/edge.png" alt="edge"></a></td>
+		<td><a href="#youmuu"><img class="varazsimg" src="icons/youmuu.png" alt="youmuu"></a></td>
+		<td><a href="#halal"><img class="varazsimg" src="icons/halal.png" alt="halal"></a></td>
+		<td><a href="#zeke"><img class="varazsimg" src="icons/zeke.png" alt="zeke"></a></td>
+		<td><a href="#hextech"><img class="varazsimg" src="icons/hextech.png" alt="hextech"></a></td>
+	</tr>
+	<tr>
+		<th><a href="#belt"><img class="varazsimg" src="icons/belt.png" alt="belt"></a></th>
+		<td><a href="#redbuff"><img class="varazsimg" src="icons/redbuff.png" alt="redbuff"></a></td>
+		<td><a href="#titanic"><img class="varazsimg" src="icons/titanic.png" alt="titanic"></a></td>
+		<td><a href="#megvaltas"><img class="varazsimg" src="icons/megvaltas.png" alt="megvaltas"></a></td>
+		<td><a href="#zefir"><img class="varazsimg" src="icons/zefir.png" alt="zefir"></a></td>
+		<td><a href="#csapda"><img class="varazsimg" src="icons/csapda.png" alt="csapda"></a></td>
+		<td><a href="#jegkalapacs"><img class="varazsimg" src="icons/jegkalapacs.png" alt="jegkalapacs"></a></td>
+		<td><a href="#zeke"><img class="varazsimg" src="icons/zeke.png" alt="zeke"></a></td>
+		<td><a href="#warmog"><img class="varazsimg" src="icons/warmog.png" alt="warmog"></a></td>
+		<td><a href="#morello"><img class="varazsimg" src="icons/morello.png" alt="morello"></a></td>
+	</tr>
+	<tr>
+		<th><a href="#rod"><img class="varazsimg" src="icons/rod.png" alt="rod"></a></th>
+		<td><a href="#solari"><img class="varazsimg" src="icons/solari.png" alt="solari"></a></td>
+		<td><a href="#guinsoo"><img class="varazsimg" src="icons/guinsoo.png" alt="guinsoo"></a></td>
+		<td><a href="#luden"><img class="varazsimg" src="icons/luden.png" alt="luden"></a></td>
+		<td><a href="#szikra"><img class="varazsimg" src="icons/szikra.png" alt="szikra"></a></td>
+		<td><a href="#jewel"><img class="varazsimg" src="icons/jewel.png" alt="jewel"></a></td>
+		<td><a href="#cinder"><img class="varazsimg" src="icons/cinder.png" alt="cinder"></a></td>
+		<td><a href="#hextech"><img class="varazsimg" src="icons/hextech.png" alt="hextech"></a></td>
+		<td><a href="#morello"><img class="varazsimg" src="icons/morello.png" alt="morello"></a></td>
+		<td><a href="#rabadon"><img class="varazsimg" src="icons/rabadon.png" alt="rabadon"></a></td>
+	</tr>
+
+
+
+</table>
+</div>
+<div class="space"></div>
+<div class="main">
+	<h2>Alaptárgyak</h2>
+	<div class="altarolo"  id="vest">
+		<div class="aldiv">
+		<h4>Sodronyozott mellény</h4>
+		<img class="targykeret" src="icons/vest.png" alt="vest">
+		<p class="targyak"> +25.0 páncél</p>
+		</div>
+	</div>
+	<div class="altarolo" id="bow">
+		<div class="aldiv">
+		<h4>Reflexíj</h4>
+		<img class="targykeret" src="icons/bow.png" alt="bow">
+		<p class="targyak"> +15% támadási sebesség</p>
+		</div>
+	</div>
+	<div class="altarolo" id="konny">
+		<div class="aldiv">
+		<h4>Istennő könnycseppe</h4>
+		<img class="targykeret" src="icons/tear.png" alt="tear">
+		<p class="targyak"> +20.0 mana</p>
+		</div>
+	</div>
+	<div class="altarolo" id="palast">
+		<div class="aldiv">
+		<h4>Negatron palást</h4>
+		<img class="targykeret" src="icons/cloak.png" alt="cloak">
+		<p class="targyak"> +25.0 varázsellenállás</p>
+		</div>
+	</div>
+	<div class="altarolo" id="boksz">
+		<div class="aldiv">
+		<h4>Bokszkesztyű</h4>
+		<img class="targykeret" src="icons/glove.png" alt="glove">
+		<p class="targyak"> +10% kitérési esély</p>
+		<p class="targyak"> +10% kritikus csapási esély</p>
+		</div>
+	</div>
+	<div class="altarolo" id="spatula">
+		<div class="aldiv">
+		<h4>Spatula</h4>
+		<img class="targykeret" src="icons/spatula.png" alt="spatula">
+		<p class="targyak">Biztos tud valamit...</p>
+		</div>
+	</div>
+	<div class="altarolo" id="kard">
+		<div class="aldiv">
+		<h4>K.N. kard</h4>
+		<img class="targykeret" src="icons/sword.png" alt="knkard">
+		<p class="targyak"> +15 sebzés</p>
+		</div>
+	</div>
+	<div class="altarolo" id="belt">
+		<div class="aldiv">
+		<h4>Az óriás öve</h4>
+		<img class="targykeret" src="icons/belt.png" alt="belt">
+		<p class="targyak"> +200.0 életerő</p>
+		</div>
+	</div>
+	<div class="altarolo" id="rod">
+		<div class="aldiv">
+		<h4>Feleslegesen nagy pálca</h4>
+		<img class="targykeret" src="icons/rod.png" alt="rod">
+		<p class="targyak"> +20.0% varázserő</p>
+		</div>
+	</div>
+	<div class="tores"></div>
+	<h2>Fejlesztett tárgyak</h2>
+	<div class="altarolo" id="rabadon">
+		<div class="aldiv">
+		<h4>Rabadon halálsüvege</h4>
+		<img class="targykeret" src="icons/rabadon.png" alt="rabadon">
+		<p class="targyak">Viselője 75% varázserő-növelést kap.(Az általa szerzett összes varázserő-bónusz 75%-kal nagyobb lesz.</p>
+		</div>
+	</div>
+	<div class="altarolo" id="edge">
+		<div class="aldiv">
+		<h4>Határtalan penge</h4>
+		<img class="targykeret" src="icons/edge.png" alt="edge">
+		<p class="targyak">+125% kritikus csapási sebzést biztosít a viselőjének</p>
+		</div>
+	</div>
+	<div class="altarolo" id="frozen">
+		<div class="aldiv">
+		<h4>Fagyos szív</h4>
+		<img class="targykeret" src="icons/frozen.png" alt="frozen">
+		<p class="targyak">25.0%-kal csökkenti a környező mezőkön álló ellenfelek támadási sebességét.</p>
+		</div>
+	</div>
+	<div class="altarolo" id="feny">
+		<div class="aldiv">
+		<h4>A fény talizmánja</h4>
+		<img class="targykeret" src="icons/feny.png" alt="feny">
+		<p class="targyak">A viselője egyben Fény is</p>
+		<p class="targyak">(Egyedi – Hősönként csak egy)</p>
+		</div>
+	</div>
+	<div class="altarolo" id="csitt">
+		<div class="aldiv">
+		<h4>Csitt</h4>
+		<img class="targykeret" src="icons/csitt.png" alt="csitt">
+		<p class="targyak">Az alaptámadások találat esetén 33% eséllyel elnémítják az ellenfelet, 4.0 másodpercre megakadályozva őt a manaszerzésben.</p>
+		</div>
+	</div>
+	<div class="altarolo" id="megvaltas">
+		<div class="aldiv">
+		<h4>Megváltás</h4>
+		<img class="targykeret" src="icons/megvaltas.png" alt="megvaltas">
+		<p class="targyak">Amikor a viselője életereje 30% alá csökken, a közeli szövetségesek 1200 életerőt nyernek vissza egy 2,5 másodperces késleltetést követően.
+			A hatás harconként egyszer aktiválódik.</p>
+		</div>
+	</div>
+	<div class="altarolo" id="melleny">
+		<div class="aldiv">
+		<h4>Vadászmellény</h4>
+		<img class="targykeret" src="icons/melleny.png" alt="melleny">
+		<p class="targyak">A viselője egyben Őrző is</p>
+		<p class="targyak">(Egyedi – Hősönként csak egy)</p>
+		</div>
+	</div>
+	<div class="altarolo" id="zefir">
+		<div class="aldiv">
+		<h4>Zefír</h4>
+		<img class="targykeret" src="icons/zefir.png" alt="zefir">
+		<p class="targyak">A csata kezdetén a viselő megidéz egy forgószelet az aréna ellenkező oldalán, amely 6 másodpercre kivonja a harcból az első elért ellenfelet.</p>
+		<p class="targyak">(Egyedi – Hősönként csak egy)</p>
+		</div>
+	</div>
+	<div class="altarolo" id="sapka">
+		<div class="aldiv">
+		<h4>Mágusok sapkája</h4>
+		<img class="targykeret" src="icons/sapka.png" alt="sapka">
+		<p class="targyak">A viselője egyben Mágus is</p>
+		<p class="targyak">(Egyedi – Hősönként csak egy)</p>
+		</div>
+	</div>
+	<div class="altarolo" id="zeke">
+		<div class="aldiv">
+		<h4>Zeke hírnöke</h4>
+		<img class="targykeret" src="icons/zeke.png" alt="zeke">
+		<p class="targyak">A csata kezdetén a viselő és az ugyanabban a sorban, legfeljebb 2 mező távolságra lévő szövetségesek +15.0% támadási sebességet kapnak a harc idejére.</p>
+		</div>
+	</div>
+	<div class="altarolo" id="tolvaj">
+		<div class="aldiv">
+		<h4>Tolvajkesztyű</h4>
+		<img class="targykeret" src="icons/tolvaj.png" alt="tolvaj">
+		<p class="targyak">A tervezési fázisok elején a viselője 2 ideiglenes tárgyat kap. Az ideiglenes tárgyak ereje a játékos szintjétől függ.</p>
+		<p class="targyak">(Három tárgyhelyet foglal el)</p>
+		</div>
+	</div>
+	<div class="altarolo" id="guinsoo">
+		<div class="aldiv">
+		<h4>Guinsoo dühpengéje</h4>
+		<img class="targykeret" src="icons/guinsoo.png" alt="guinsoo">
+		<p class="targyak">Viselőjének az alaptámadások +4% bónusz támadási sebességet biztosítanak a harc végéig. A hatás korlátlanul halmozható.</p>
+		</div>
+	</div>
+	<div class="altarolo" id="szikra">
+		<div class="aldiv">
+		<h4>Ionos szikra</h4>
+		<img class="targykeret" src="icons/szikra.png" alt="szikra">
+		<p class="targyak">Viselője 90.0 tényleges sebzést okoz az ellenséges hősöknek, amikor elsütnek egy varázslatot.
+</p>
+		</div>
+	</div>
+	<div class="altarolo" id="karom">
+		<div class="aldiv">
+		<h4>Sárkánykarom</h4>
+		<img class="targykeret" src="icons/karom.png" alt="karom">
+		<p class="targyak">50.0%-kal csökkent minden elszenvedett varázssebzést.
+</p>
+		</div>
+	</div>
+	<div class="altarolo" id="fantom">
+		<div class="aldiv">
+		<h4>Fantomtáncos</h4>
+		<img class="targykeret" src="icons/fantom.png" alt="fantom">
+		<p class="targyak">A viselője kitér az összes kritikus csapás elől.</p>
+		<p class="targyak">(Egyedi – Hősönként csak egy)</p>
+		</div>
+	</div>
+	<div class="altarolo" id="csapda">
+		<div class="aldiv">
+		<h4>Csapdakarom</h4>
+		<img class="targykeret" src="icons/csapda.png" alt="csapda">
+		<p class="targyak">A viselőt egy pajzs veszi körül, amely kivédi az őt eltaláló első ellenséges varázslatot. A pajzsot áttörő ellenfél 4.0 másodpercre elkábul.
+</p>
+		</div>
+	</div>
+	<div class="altarolo" id="tuske">
+		<div class="aldiv">
+		<h4>Tüskevért</h4>
+		<img class="targykeret" src="icons/tuske.png" alt="tuske">
+		<p class="targyak">Amikor a viselőjét eltalálja egy alaptámadás, a csökkentett sebzés 100%-át varázssebzésként veri vissza a támadóra.
+</p>
+		</div>
+	</div>
+	<div class="altarolo" id="gauntlet">
+		<div class="aldiv">
+		<h4>Jégkesztyű</h4>
+		<img class="targykeret" src="icons/gauntlet.png" alt="gauntlet">
+		<p class="targyak">Amikor a viselője kitér, egy fagyos zónát hoz létre. A zónában tartózkodó ellenfelek támadási sebessége 35%-kal csökken.
+</p>
+		</div>
+	</div>
+	<div class="altarolo" id="youmuu">
+		<div class="aldiv">
+		<h4>Youmuu szellemkardja</h4>
+		<img class="targykeret" src="icons/youmuu.png" alt="youmuu">
+		<p class="targyak">A viselője egyben Orgyilkos is</p>
+		<p class="targyak">(Egyedi – Hősönként csak egy)</p>
+		</div>
+	</div>
+	<div class="altarolo" id="giant">
+		<div class="aldiv">
+		<h4>Óriásölő</h4>
+		<img class="targykeret" src="icons/giant.png" alt="giant">
+		<p class="targyak">A viselő alaptámadásai a célpont aktuális életerejének 8%-ával megegyező mértékű további fizikai sebzést okoznak.</p>
+		</div>
+	</div>
+	<div class="altarolo" id="redbuff">
+		<div class="aldiv">
+		<h4>Vörös erősítés</h4>
+		<img class="targykeret" src="icons/redbuff.png" alt="redbuff">
+		<p class="targyak">A viselő alaptámadásai lángba borítják a célpontot, amely 10 másodperc alatt a maximális életerejének 20%-ával egyenlő tényleges sebzést szenved el. Az égés megakadályozza a célpont gyógyulásának 80%-át.</p>
+		</div>
+	</div>
+	<div class="altarolo" id="igazsag">
+		<div class="aldiv">
+		<h4>Az igazság ökle</h4>
+		<img class="targykeret" src="icons/igazsag.png" alt="igazsag">
+		<p class="targyak">A tervezési fázisok elején a viselője megkapja a következők egyikét:</p>
+		<p class="targyak">Az alaptámadások és a varázslatok +50% sebzést okoznak</p>
+		<p class="targyak">Az alaptámadások 50 életerőt gyógyítanak találatkor</p>
+		</div>
+	</div>
+	<div class="altarolo" id="orangyal">
+		<div class="aldiv">
+		<h4>Őrangyal</h4>
+		<img class="targykeret" src="icons/orangyal.png" alt="orangyal">
+		<p class="targyak">Ha a viselője meghal, eltávolít róla minden negatív hatást, és 2 másodperc késleltetéssel legfeljebb 400 életerővel feltámasztja. A hatás harconként egyszer aktiválódik.</p>
+		</div>
+	</div>
+	<div class="altarolo" id="seraph">
+		<div class="aldiv">
+		<h4>A szeráf ölelése</h4>
+		<img class="targykeret" src="icons/seraph.png" alt="seraph">
+		<p class="targyak">Viselője a varázslata elsütése után azonnal visszanyer 20 manát.</p>
+		</div>
+	</div>
+	<div class="altarolo" id="jegkalapacs">
+		<div class="aldiv">
+		<h4>Jégkalapács</h4>
+		<img class="targykeret" src="icons/jegkalapacs.png" alt="jegkalapacs">
+		<p class="targyak">A viselője egyben Jégkori is</p>
+		<p class="targyak">(Egyedi – Hősönként csak egy)</p>
+		</div>
+	</div>
+	<div class="altarolo" id="runaan">
+		<div class="aldiv">
+		<h4>Runaan hurrikánja</h4>
+		<img class="targykeret" src="icons/runaan.png" alt="runaan">
+		<p class="targyak">Az alaptámadások egy további lövedéket lőnek ki, amely a viselő sebzésének 60%-ával egyenlő sebzést okoz, és alkalmazza a találati hatásokat.</p>
+		</div>
+	</div>
+	<div class="altarolo" id="bt">
+		<div class="aldiv">
+		<h4>Vérszomjas</h4>
+		<img class="targykeret" src="icons/bt.png" alt="bt">
+		<p class="targyak">Viselője alaptámadásai az okozott sebzés 40%-át életerőként töltik vissza neki.</p>
+		</div>
+	</div>
+	<div class="altarolo" id="cinder">
+		<div class="aldiv">
+		<h4>A tűzcsóva parazsa</h4>
+		<img class="targykeret" src="icons/cinder.png" alt="cinder">
+		<p class="targyak">A viselője egyben Tűzcsóva is</p>
+		<p class="targyak">(Egyedi – Hősönként csak egy)</p>
+		</div>
+	</div>
+	<div class="altarolo" id="titanic">
+		<div class="aldiv">
+		<h4>Titánhidra</h4>
+		<img class="targykeret" src="icons/titanic.png" alt="titanic">
+		<p class="targyak">Az alaptámadások a viselő maximális életerejének 3.0%-ával egyenlő további varázssebzést okoznak a célpontnak és a mögötte lévő közeli ellenfeleknek.
+</p>
+		</div>
+	</div>
+	<div class="altarolo" id="cleaver">
+		<div class="aldiv">
+		<h4>Dühöngők fejszéje</h4>
+		<img class="targykeret" src="icons/cleaver.png" alt="cleaver">
+		<p class="targyak">A viselője egyben Őrjöngő is</p>
+		<p class="targyak">(Egyedi – Hősönként csak egy)</p>
+		</div>
+	</div>
+	<div class="altarolo" id="shojin">
+		<div class="aldiv">
+		<h4>Shojin lándzsája</h4>
+		<img class="targykeret" src="icons/shojin.png" alt="shojin">
+		<p class="targyak">Viselőjének alaptámadásai a varázslata elsütése után visszatöltik a maximális mana 18%-át.</p>
+		</div>
+	</div>
+	<div class="altarolo" id="luden">
+		<div class="aldiv">
+		<h4>Luden visszhangja</h4>
+		<img class="targykeret" src="icons/luden.png" alt="luden">
+		<p class="targyak">Amikor a viselője sebzést okoz a varázslatával, akkor az elsődleges célpont és legfeljebb 3 közeli ellenfél 150.0 további varázssebzést szenved el.</p>
+		</div>
+	</div>
+	<div class="altarolo" id="solari">
+		<div class="aldiv">
+		<h4>Az iron solarik medálja</h4>
+		<img class="targykeret" src="icons/solari.png" alt="solari">
+		<p class="targyak">A csata kezdetén a tárgy viselője és az ugyanabban a sorban, legfeljebb 2 mező távolságra lévő szövetségesek 8.0 másodpercre egy 300.0 sebzést elnyelő pajzsot kapnak.</p>
+		</div>
+	</div>
+	<div class="altarolo" id="morello">
+		<div class="aldiv">
+		<h4>Morellonomikon</h4>
+		<img class="targykeret" src="icons/morello.png" alt="morello">
+		<p class="targyak">Amikor a viselője sebzést okoz a varázslatával, lángba borítja a célpontot, amely @BurnDuration@ másodperc alatt a maximális életerejének 20%-ával egyenlő tényleges sebzést szenved el. Az égés megakadályozza a célpont gyógyulásának 80%-át.</p>
+		<p class="targyak">(Egyedi – Hősönként csak egy)</p>
+		</div>
+	</div>
+	<div class="altarolo" id="rapid">
+		<div class="aldiv">
+		<h4>Gyorstüzelő ágyú</h4>
+		<img class="targykeret" src="icons/rapid.png" alt="rapid">
+		<p class="targyak">A viselője +100% támadási hatótávot kap.</p>
+		</div>
+	</div>
+	<div class="altarolo" id="kardtoro">
+		<div class="aldiv">
+		<h4>Kardtörő</h4>
+		<img class="targykeret" src="icons/kardtoro.png" alt="kardtoro">
+		<p class="targyak">Viselője alaptámadásai 33% eséllyel 3.0 másodpercre lefegyverzik a célpontot, aki így nem hajthat végre alaptámadásokat.</p>
+		</div>
+	</div>
+	<div class="altarolo" id="botrk">
+		<div class="aldiv">
+		<h4>A letaszított király kardja</h4>
+		<img class="targykeret" src="icons/botrk.png" alt="botrk">
+		<p class="targyak">A viselője egyben Kardmester is</p>
+		<p class="targyak">(Egyedi – Hősönként csak egy)</p>
+		</div>
+	</div>
+	<div class="altarolo" id="jewel">
+		<div class="aldiv">
+		<h4>Drágaköves kesztyű</h4>
+		<img class="targykeret" src="icons/jewel.png" alt="jewel">
+		<p class="targyak">A viselő varázslatai kritikus csapást okozhatnak.</p>
+		<p class="targyak">(Egyedi – Hősönként csak egy)</p>
+		</div>
+	</div>
+	<div class="altarolo" id="repeater">
+		<div class="aldiv">
+		<h4>Ismétlő számszeríj</h4>
+		<img class="targykeret" src="icons/repeater.png" alt="repeater">
+		<p class="targyak">Viselője halálakor az Ismétlő számszeríj egy új szövetségeshez kerül. Az Ismétlő számszeríj minden újrafelvételkor további +30% támadási sebességet és +30% kritikus csapási esélyt biztosít a csata hátralévő idejére.
+				A hatás korlátlanul halmozható.</p>
+		<p class="targyak">(Egyedi – Hősönként csak egy)</p>
+		</div>
+	</div>
+	<div class="altarolo" id="forceof">
+		<div class="aldiv">
+		<h4>A természet ereje</h4>
+		<img class="targykeret" src="icons/forceof.png" alt="forceof">
+		<p class="targyak">Viselője csapatának maximális létszáma +1 fővel növekszik.</p>
+		</div>
+	</div>
+	<div class="altarolo" id="qss">
+		<div class="aldiv">
+		<h4>Higany</h4>
+		<img class="targykeret" src="icons/qss.png" alt="qss">
+		<p class="targyak">A viselőt pajzs veszi körül, amely kivédi a következő tömegirányító hatást. A pajzs 3 másodpercenként megújul.</p>
+		</div>
+	</div>
+	<div class="altarolo" id="halal">
+		<div class="aldiv">
+		<h4>Halálpenge</h4>
+		<img class="targykeret" src="icons/halal.png" alt="halal">
+		<p class="targyak">Amikor a viselője megöl valakit, vagy részt vesz egy ellenfél megölésében, +15 sebzést kap a csata hátralévő idejére.
+			A hatás korlátlanul halmozható. Kezdetben 1 jelzője van.</p>
+		</div>
+	</div>
+	<div class="altarolo" id="warmog">
+		<div class="aldiv">
+		<h4>Warmog vértje</h4>
+		<img class="targykeret" src="icons/warmog.png" alt="warmog">
+		<p class="targyak">Viselője a hiányzó életereje 6.0%-át tölti vissza másodpercenként.</p>
+		</div>
+	</div>
+	<div class="altarolo" id="statikk">
+		<div class="aldiv">
+		<h4>Statikk töltőpengéje</h4>
+		<img class="targykeret" src="icons/statikk.png" alt="statikk">
+		<p class="targyak">Viselője minden harmadik alaptámadása 3 ellenfélnek 100.0 varázssebzést okoz.</p>
+		</div>
+	</div>
+	<div class="altarolo" id="hextech">
+		<div class="aldiv">
+		<h4>Hextech lőpenge</h4>
+		<img class="targykeret" src="icons/hextech.png" alt="hextech">
+		<p class="targyak">Viselőjének az alaptámadások és a varázslatok az okozott sebzés 25%-át életerőként töltik vissza.</p>
+		</div>
+	</div>
+	
+</div>
+<div class="valasztf"></div>
+<footer>
+<div class="elerhetosegek">
+<a href="https://www.youtube.com/user/LeagueofLegendsHU" target="_blank"><img class="media" src="multi/youtube.png" alt="youtube" ></a>
+<a href="https://twitter.com/leagueoflegends" target="_blank"><img class="media" src="multi/twitter.png" alt="twitter"></a>
+<a href="https://www.facebook.com/LeagueofLegendsHungary" target="_blank"><img class="media" src="multi/facebook.png" alt="facebook"></a>
+</div>
+<div class="referenciak">
+<a href="https://eune.leagueoflegends.com/hu/news/game-updates/gameplay/teamfight-tactics-gameplay-guide" target="_blank"><img class="media" src="icons/tfticon.png" alt="Tft2"></a>
+<a href="https://leagueoflegends.fandom.com/wiki/Little_Legends_(Teamfight_Tactics)" target="_blank"><img class="media" src="eggs/series5.png" alt="Tft2"></a>
+</div>
+<div class="referencia">Referenciák:</div>
+</footer>	
+</div>
+</body>
+</html>

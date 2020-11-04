@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<title>Kis Legendák</title>
+<link rel="stylesheet"  type="text/css" href="style.css">
+<link rel="icon" href="icons/ekko.png" type="image/jpeg">
+</head>
+<body id="body">
+<div class="bgimg1">
+<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="arrowup.png" id="arrowup" alt="fel"></button>
+<script>
+//gomb rész
+var mybutton = document.getElementById("myBtn");
+// 200px után mutatja a gombot
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// Feltekerés
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+  document.getElementById("body").style.overflow= "hidden";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+  document.getElementById("body").style.overflow= "auto";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides demo">
+      <div class="numbertext">1 / 13</div>
+      <div class="main"><h1>Kristály</h1>
+	  <div class="aldiv"><p>Ha több Kristály típusú hőst vetsz be, lesz egy felső határa a sebzésnek, amit egy támadással vagy
+							képességgel elért találat során elszenvedhetnek. </p></div>
+	  </div>
+    </div>
+	<div class="mySlides demo">
+      <div class="numbertext">2 / 13</div>
+      <div class="main"><h1>Sivatagi</h1>
+	  <div class="aldiv"><p>Több Sivatagi típusú hős egy csapatban csökkenti az ellenséges csapat 
+							páncélzatát. Minél több Sivatagi típusú hőst vetsz be, annál jobban csökken a páncélzat.
+ </p></div>
+	  </div>
+    </div>
+	<div class="mySlides demo">
+      <div class="numbertext">3 / 13</div>
+      <div class="main"><h1>Villám</h1>
+	  <div class="aldiv"><p>Több Villám típusú hős egy csapatban sebzést okoz a közeli ellenfeleknek, 
+							ha kritikus csapást okoznak vagy kapnak. </p></div>
+	  </div>
+    </div>
+	<div class="mySlides demo">
+      <div class="numbertext">4 / 13</div>
+      <div class="main"><h1>Jégkori</h1>
+	  <div class="aldiv"><p>Ha több Jégkori hőst vetsz be a harcmezőn, minden támadásuk elkábíthatja a célpontot.
+							Ennek esélye a Jégkoriak számával egyenes arányban nő. </p></div>
+	  </div>
+    </div>
+	<div class="mySlides demo">
+      <div class="numbertext">5 / 13</div>
+      <div class="main"><h1>Tűzcsóva</h1>
+	  <div class="aldiv"><p>Ha több Tűzcsóva típusú hőst vetsz be, a célpontjaik alatt átmenetileg felgyújtják a földet, és sebzést okoznak a tűzben álló ellenfeleknek. 
+							A sebzés a Tűzcsóva típusú hősök számával egyenes arányban nő. </p></div>
+	  </div>
+    </div>
+	<div class="mySlides demo">
+      <div class="numbertext">6 / 13</div>
+      <div class="main"><h1>Fény</h1>
+	  <div class="aldiv"><p>Ha több Fény típusú hőst vetsz be, az egyikük halála a többi Fény típusú hőst a maximális életerejükkel arányosan gyógyítja, és a kör hátralevő részére megnöveli a támadási sebességüket (több Fény típusú hős halálakor a hatás halmozódik).
+							A gyógyítás és a támadási sebesség a Fény típusú hősök számával egyenes arányban nő. </p></div>
+	  </div>
+    </div>
+	<div class="mySlides demo">
+      <div class="numbertext">7 / 13</div>
+      <div class="main"><h1>Acél</h1>
+	  <div class="aldiv"><p>Ha több Acél típusú hőst vetsz be, átmenetileg sebezhetetlenné válnak, ha 50% alá süllyed az életerejük.
+							</p></div>
+	  </div>
+    </div>
+	<div class="mySlides demo">
+      <div class="numbertext">8 / 13</div>
+      <div class="main"><h1>Hegyi</h1>
+	  <div class="aldiv"><p>Több Hegyi hős bevetésével a harc kezdetén egy hatalmas pajzsot vonhatsz egy véletlenszerűen
+							kiválasztott szövetséges köré.</p></div>
+	  </div>
+    </div>
+	<div class="mySlides demo">
+      <div class="numbertext">9 / 13</div>
+      <div class="main"><h1>Óceáni</h1>
+	  <div class="aldiv"><p>Több Óceáni hős bevetésével rendszeres időközönként nő a szövetségesek manája. A mana mennyisége
+							az Óceáni hősök számával egyenes arányban nő. </p></div>
+	  </div>
+    </div>
+	<div class="mySlides demo">
+      <div class="numbertext">10 / 13</div>
+      <div class="main"><h1>Méreg</h1>
+	  <div class="aldiv"><p>Ha több Méreg típusú hőst vetsz be, a sebzést okozó támadásaikkal és képességeikkel megnövelik a 
+							célpontjaik képességhasználatának manaköltségét. </p></div>
+	  </div>
+    </div>
+	<div class="mySlides demo">
+      <div class="numbertext">11 / 13</div>
+      <div class="main"><h1>Árny</h1>
+	  <div class="aldiv"><p>Ha több Árny típusú hőst vetsz be, megnövelt sebzést fognak okozni a támadás első néhány másodpercében, valamint néhány másodpercig egy ellenfél kiiktatása után. Ha több Árny típusú hőst vetsz be,
+							mindegyikük nagyobb sebzést fog okozni, ha bármelyikük kiiktat egy ellenfelet. </p></div>
+	  </div>
+    </div>
+	<div class="mySlides demo">
+      <div class="numbertext">12 / 13</div>
+      <div class="main"><h1>Szél</h1>
+	  <div class="aldiv"><p>Mindhárom Szél típusú hős bevetésével a csapatod kitérési esélyre tesz szert. </p></div>
+	  </div>
+    </div>
+	<div class="mySlides demo">
+      <div class="numbertext">13 / 13</div>
+      <div class="main"><h1>Erdei</h1>
+	  <div class="aldiv"><p>Több Erdei hős bevetésekor a harc elején az egyiküknek véletlenszerűen létrejön egy klónja.
+							A tárgyai szintén lemásolódnak. </p></div>
+	  </div>
+    </div>
+	
+	
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    
+  </div>
+</div>
+<script>
+function openModal2() {
+  document.getElementById("myModal2").style.display = "block";
+  document.getElementById("body").style.overflow= "hidden";
+}
+
+function closeModal2() {
+  document.getElementById("myModal2").style.display = "none";
+  document.getElementById("body").style.overflow= "auto";
+}
+
+var slideIndex = 1;
+showSlides2(slideIndex);
+
+function plusSlides2(n) {
+  showSlides2(slideIndex += n);
+}
+
+function currentSlide2(n) {
+  showSlides2(slideIndex = n);
+}
+
+function showSlides2(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides2");
+  var dots = document.getElementsByClassName("demo2");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<div id="myModal2" class="modal">
+  <span class="close cursor" onclick="closeModal2()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides2 demo2">
+      <div class="numbertext">1 / 12</div>
+      <div class="main"><h1>Alkimista</h1>
+	  <div class="aldiv"><p>Az Alkimisták át tudnak hatolni más egységeken, és mindig mozgásban maradnak. </p></div>
+	  </div>
+    </div>
+	<div class="mySlides2 demo2">
+      <div class="numbertext">2 / 12</div>
+      <div class="main"><h1>Orgyilkos</h1>
+	  <div class="aldiv"><p>Az Orgyilkosok a harc kezdetén keresztüllopakodnak a harcmezőn, és az elhelyezésük
+							helyével ellenkező oldalon jelennek meg.
+ </p></div>
+	  </div>
+    </div>
+	<div class="mySlides2 demo2">
+      <div class="numbertext">3 / 12</div>
+      <div class="main"><h1>Avatár</h1>
+	  <div class="aldiv"><p>Az Avatár eleme kétszer számít bele az adottságbónuszokba. </p></div>
+	  </div>
+    </div>
+	<div class="mySlides2 demo2">
+      <div class="numbertext">4 / 12</div>
+      <div class="main"><h1>Őrjöngő harcos</h1>
+	  <div class="aldiv"><p>Ha több Őrjöngő harcost vetsz be, a támadásaik a célpont mögötti, tölcsér alakú területen is sebzést okozhatnak. 
+							Az esély az Őrjöngő harcosok számával egyenes arányban nő.</p></div>
+	  </div>
+    </div>
+	<div class="mySlides2 demo2">
+      <div class="numbertext">5 / 12</div>
+      <div class="main"><h1>Kardmester</h1>
+	  <div class="aldiv"><p>Ha több Kardmestert vetsz be a harcmezőn, minden támadásuk többször lesújthat a célpontra.
+							Ennek esélye a Kardmesterek számával egyenes arányban nő. </p></div>
+	  </div>
+    </div>
+	<div class="mySlides2 demo2">
+      <div class="numbertext">6 / 12</div>
+      <div class="main"><h1>Idéző</h1>
+	  <div class="aldiv"><p>Több Idéző bevetésével növelheted a megidézett szövetségeseik életerejét és időtartamát.
+							Ez az Idézők számával egyenes arányban nő.<br>
+							Az Idézők kísérői is részesülnek az elem- és kasztbónuszokból, de nem számítanak további
+							egységnek a bónuszok magasabb szintjeinek aktiválásánál.</p></div>
+	  </div>
+    </div>
+	<div class="mySlides2 demo2">
+      <div class="numbertext">7 / 12</div>
+      <div class="main"><h1>Druida</h1>
+	  <div class="aldiv"><p>Ha két Druidát vetsz be, minden Druida életerő-regenerálódást kap.
+							</p></div>
+	  </div>
+    </div>
+	<div class="mySlides2 demo2">
+      <div class="numbertext">8 / 12</div>
+      <div class="main"><h1>Mágus</h1>
+	  <div class="aldiv"><p>Ha több Mágust vetsz be, egy képesség használata után újra el fogják sütni azt.
+							Az esély a Mágusok számával egyenes arányban nő.</p></div>
+	  </div>
+    </div>
+	<div class="mySlides2 demo2">
+      <div class="numbertext">9 / 12</div>
+      <div class="main"><h1>Misztikus</h1>
+	  <div class="aldiv"><p>Ha több Misztikust vetsz be, minden szövetségesük varázsellenállást kap.
+							Ez a Misztikusok számával egyenes arányban nő. </p></div>
+	  </div>
+    </div>
+	<div class="mySlides2 demo2">
+      <div class="numbertext">10 / 12</div>
+      <div class="main"><h1>Ragadozó</h1>
+	  <div class="aldiv"><p>Ha több Ragadozót vetsz be, a támadásukkal és a képességeikkel azonnal 
+							kivégzik az alacsony életerejű ellenfeleket. </p></div>
+	  </div>
+    </div>
+	<div class="mySlides2 demo2">
+      <div class="numbertext">11 / 12</div>
+      <div class="main"><h1>Vadász</h1>
+	  <div class="aldiv"><p>Ha több Vadászt vetsz be, esélyük van rövid időre megnövelni a támadási sebességüket.
+							Ennek esélye a Vadászok számával egyenes arányban nő. </p></div>
+	  </div>
+    </div>
+	<div class="mySlides2 demo2">
+      <div class="numbertext">12 / 12</div>
+      <div class="main"><h1>Őrző</h1>
+	  <div class="aldiv"><p>Ha több Őrzőt vetsz be, páncélt kapnak.
+							A bónusz mértéke az Őrzők számával egyenes arányban nő. </p></div>
+	  </div>
+    </div>
+	
+	
+    
+    <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+
+    
+  </div>
+</div>
+	<header>
+	
+	<a href="https://eune.leagueoflegends.com/hu/" target="_blank"><img id="lollogo" src="resize.png" alt="lollogo"></a>
+	<div class="menu">
+            <a href="index.html">FŐOLDAL</a>
+			<a href="kislegendak.html">KIS LEGENDÁK</a>
+			<a href="hosok.html">HŐSÖK</a>
+			<a href="varazs.html">VARÁZSTÁRGYAK</a>
+	</div>
+	</header>
+	<div class="space"></div>
+	<div class="main">
+			<h1>Hősök</h1>
+		<div class="altarolo">
+			<div class="aldiv">
+				<q>A hősök azok az egységek, akiket felvehetsz a csapatodba, egyesítheted őket, majd elhelyezheted a harcmezőn,
+				és csatába küldheted őket, a harc kezdetétől pedig önállóan harcolnak.Három fő cselekvésre képesek:</q>
+				<ul>
+					<li>A hősök úgy mozognak a csatamezőn, hogy támadási távolságukba kerüljön egy ellenfél.</li>
+					<li>A hősök támadják egymást, és néha megnövelt sebzést okozó kritikus csapásokat érnek el.</li>
+					<li>Minden hősnek van egy egyedi képessége, amelyet időnként elsüt. A képességek lehetnek támadó vagy védekező jellegűek,
+						illetve segíthetik az egész csapatot.</li>
+				</ul>
+				<q>A hősöknek nyolc alapértékük van:</q>
+				<ul>
+					<li><span class="bold">Életerő: </span>ennyi sérülést visel el a hős, mielőtt meghal.</li>
+					<li><span class="bold">Támadási hatótáv: </span>ilyen közel kell kerülnie a hősnek az ellenfélhez, hogy támadhasson.</li>
+					<li><span class="bold">Sebzés: </span>ekkora sebzést okoznak a hős támadásai.</li>
+					<li><span class="bold">Támadási sebesség: </span>a hős támadásainak gyakorisága.</li>
+					<li><span class="bold">Varázserő: </span>a hős képességének fokmérője.</li>
+					<li><span class="bold">Páncél: </span>csökkenti a támadásokból elszenvedett sebzést.</li>
+					<li><span class="bold">Varázsellenállás: </span>csökkenti a képességekből elszenvedett sebzést.</li>
+					<li><span class="bold">Mana: </span>meghatározza, hogy a hős milyen gyakran képes elsütni a képességét (az alacsonyabb érték azt jelenti, hogy a képesség gyakrabban vethető be).
+						<ul>
+							<li>A hősök általában üres manasávval kezdik a harcot, amit a végrehajtott támadások és az elszenvedett sebzés tölt fel.</li>
+							<li>A hősök automatikusan elsütik a képességüket, amikor feltöltődik a manasávjuk.</li>
+							<li>Néhány hősnek állandó passzív képességei vannak, amelyek mindig aktívak.</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="altarolo">
+			<h3>Csillagszint</h3>
+			<div class="aldiv">
+				<q>Egyesíts három ugyanolyan hőst, hogy létrehozd a hős kétcsillagos változatát.
+					A kétcsillagos hősöknek jóval magasabb az életerejük és a sebzésük, valamint a képességeik is erősebbé válnak.<br>
+					Három kétcsillagos hőst egyesítve egy még erősebb, háromcsillagos példányt hozol létre a hősből. 
+					A háromcsillagos hősöknek nagyon magas az életerejük és a sebzésük, a képességük pedig eléri a maximális szintet!</q>
+			</div>
+			<div><img class="sajatarena" src="divkepek/csillagszint.jpg" alt="csillagszint"></div>
+			<div class="aldiv">
+				<q>A hősök egyesítése automatikusan történik, amint három példányod lesz ugyanabból a hősből.
+					A fejlesztett hős az egyik egyesített hős helyén jelenik meg a csatamezőn, ha valamelyiket korábban kihelyezted oda.
+				</q>
+			</div>
+		</div>
+		<div class="altarolo">
+			<h3>Szint</h3>
+			<div class="aldiv">
+				<q>A hősök öt osztályba vannak besorolva. A magasabb osztályba tartozó hősök erősebbek, 
+					de ritkábbak és drágábbak is. A korai játékban csak alacsonyabb osztályú hősökkel fogsz
+					találkozni, de ahogy szintet lépsz, fokozatosan nő majd a hősök osztálya is.<br>
+					A magasabb szintű hősosztályokat azok színe, a drágakő alakja és az aranyban kifejezett 
+					áruk alapján lehet megkülönböztetni:
+				</q>
+				<ul>
+					<li>1. osztály(1 arany)</li>
+					<li><img class="szintkep" src="szint/masodik.png" alt="2."> 2. osztály(2 arany)</li>
+					<li><img class="szintkep" src="szint/harmadik.png" alt="3."> 3. osztály(3 arany)</li>
+					<li><img class="szintkep" src="szint/negyedik.png" alt="4."> 4. osztály(4 arany)</li>
+					<li><img class="szintkep" src="szint/otodik.png" alt="5."> 5. osztály(5 arany)</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div class="valaszt0"></div>
+</div>
+	<div class="valaszt"><h1>Származások</h1></div>
+<div class="bgimg2">
+	<div class="valaszt1"></div>
+	<div class="main">
+		<div class="aldiv">
+			<p>A hős származása azt mutatja, hogy honnan származik, vagy kiknek a szövetségese. Ha több ugyanolyan származású hős kerül egy csapatba,
+			jelentős bónuszokat oldhatsz fel! Ha egy hősből több példány van, mindegyikük részesül a származási bónuszból, de egy hősből csak az
+			első példány számít a bónusz mértékének számításakor még akkor is, ha a többi példány más csillagszintű. Mindegyik származás egyedi bónuszokat biztosít:</p>
+		</div>
+		<div class="altarolo" onclick="openModal();currentSlide(1)">
+			<h1>Kristály</h1>
+		</div>
+		<div class="altarolo" onclick="openModal();currentSlide(2)">
+			<h1>Sivatagi</h1>
+		</div>
+		<div class="altarolo" onclick="openModal();currentSlide(3)">
+			<h1>Villám</h1>
+		</div>
+		<div class="altarolo" onclick="openModal();currentSlide(4)">
+			<h1>Jégkori</h1>
+		</div>
+		<div class="altarolo" onclick="openModal();currentSlide(5)">
+			<h1>Tűzcsóva</h1>
+		</div>
+		<div class="altarolo" onclick="openModal();currentSlide(6)">
+			<h1>Fény</h1>
+		</div>
+		<div class="altarolo" onclick="openModal();currentSlide(7)">
+			<h1>Acél</h1>
+		</div>
+		<div class="altarolo" onclick="openModal();currentSlide(8)">
+			<h1>Hegyi</h1>
+		</div>
+		<div class="altarolo" onclick="openModal();currentSlide(9)">
+			<h1>Óceáni</h1>
+		</div>
+		<div class="altarolo" onclick="openModal();currentSlide(10)">
+			<h1>Méreg</h1>
+		</div>
+		<div class="altarolo" onclick="openModal();currentSlide(11)">
+			<h1>Árny</h1>
+		</div>
+		<div class="altarolo" onclick="openModal();currentSlide(12)">
+			<h1>Szél</h1>
+		</div>
+		<div class="altarolo" onclick="openModal();currentSlide(13)">
+			<h1>Erdei</h1>
+		</div>
+	</div>
+<div class="valaszt0"></div>
+</div>
+	<div class="valaszt"><h1>Kasztok</h1></div>
+<div class="bgimg3">
+	<div class="valaszt1"></div>
+	<div class="main">
+		<div class="aldiv">
+			<q>A hősök kasztja a származásukhoz hasonlóan befolyásolja a harcmodorukat. Attól függően, hogy egy kasztból hány egyedi aktív hős van jelen a csatamezőn,
+			további adottságbónuszokat kaphatsz (a hősökből ebben az esetben is csak egy példány vehető figyelembe):</q>
+		</div>
+		<div class="altarolo" onclick="openModal2();currentSlide2(1)">
+			<h1>Alkimista</h1>
+		</div>
+		<div class="altarolo" onclick="openModal2();currentSlide2(2)">
+			<h1>Orgyilkos</h1>
+		</div>
+		<div class="altarolo" onclick="openModal2();currentSlide2(3)">
+			<h1>Avatár</h1>
+		</div>
+		<div class="altarolo" onclick="openModal2();currentSlide2(4)">
+			<h1>Őrjöngő harcos</h1>
+		</div>
+		<div class="altarolo" onclick="openModal2();currentSlide2(5)">
+			<h1>Kardmester</h1>
+		</div>
+		<div class="altarolo" onclick="openModal2();currentSlide2(6)">
+			<h1>Idéző</h1>
+		</div>
+		<div class="altarolo" onclick="openModal2();currentSlide2(7)">
+			<h1>Druida</h1>
+		</div>
+		<div class="altarolo" onclick="openModal2();currentSlide2(8)">
+			<h1>Mágus</h1>
+		</div>
+		<div class="altarolo" onclick="openModal2();currentSlide2(9)">
+			<h1>Misztikus</h1>
+		</div>
+		<div class="altarolo" onclick="openModal2();currentSlide2(10)">
+			<h1>Ragadozó</h1>
+		</div>
+		<div class="altarolo" onclick="openModal2();currentSlide2(11)">
+			<h1>Vadász</h1>
+		</div>
+		<div class="altarolo" onclick="openModal2();currentSlide2(12)">
+			<h1>Őrző</h1>
+		</div>
+		
+	</div>
+<div class="valasztf"></div>
+<footer>
+<div class="elerhetosegek">
+<a href="https://www.youtube.com/user/LeagueofLegendsHU" target="_blank"><img class="media" src="multi/youtube.png" alt="youtube" ></a>
+<a href="https://twitter.com/leagueoflegends" target="_blank"><img class="media" src="multi/twitter.png" alt="twitter"></a>
+<a href="https://www.facebook.com/LeagueofLegendsHungary" target="_blank"><img class="media" src="multi/facebook.png" alt="facebook"></a>
+</div>
+<div class="referenciak">
+<a href="https://eune.leagueoflegends.com/hu/news/game-updates/gameplay/teamfight-tactics-gameplay-guide" target="_blank"><img class="media" src="icons/tfticon.png" alt="Tft2"></a>
+<a href="https://leagueoflegends.fandom.com/wiki/Little_Legends_(Teamfight_Tactics)" target="_blank"><img class="media" src="eggs/series5.png" alt="Tft2"></a>
+</div>
+<div class="referencia">Referenciák:</div>
+</footer>
+</div>
+	
+</body>
+</html>

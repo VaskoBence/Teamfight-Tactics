@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<title>Kis Legendák</title>
+<link rel="stylesheet"  type="text/css" href="style.css">
+<link rel="icon" href="icons/tfticon.jpeg" type="image/jpeg">
+</head>
+<body id="body">
+<div class="bgimg9">
+<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="arrowup.png" id="arrowup" alt="fel"></button>
+<script>
+//gomb rész
+var mybutton = document.getElementById("myBtn");
+// 200px után mutatja a gombot
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// Feltekerés
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+	<header>
+	<a href="https://eune.leagueoflegends.com/hu/" target="_blank"><img id="lollogo" src="resize.png" alt="lollogo"></a>
+	<div class="menu">
+            <a href="index.html">FŐOLDAL</a>
+			<a href="kislegendak.html">KIS LEGENDÁK</a>
+			<a href="hosok.html">HŐSÖK</a>
+			<a href="varazs.html">VARÁZSTÁRGYAK</a>
+	</div>
+	</header>
+	<div class="space"></div>
+	<div class="tojasok">
+	 <a href="kislegendak5.html"><div class="seriesbal"><img class="seriesbalk" id="otodik" src="eggs/series5.png" alt="series5">5. széria</div></a>
+	 <div class="serieskozep"><img class="serieskozepk" src="eggs/series1.png" alt="series1"></div>
+	<a href="kislegendak2.html"><div class="seriesjobb"> <img class="seriesjobbk" src="eggs/series2.png" alt="series2">2. széria</div></a>
+	</div>
+	<div class="main">
+	<h1>1. széria</h1>
+		<div class="altarolo">
+			<div class="aldiv">
+				<q>Ezek az első szériás kis legendák</q>
+			</div>
+		</div>
+		<div class="altarolo">
+			<div class="aldiv">
+				<h2>Dühszarv</h2>
+				<img class="elsolegend" src="lilleg/furyhorn.png" alt="furyhorn">
+				 <p  class="lillegszoveg">A dühszarvak oroszlánszerű négy lábon járó emlősök, mely apró teremtményeknek 
+				 vastag bundája és hatalmas hátra lekonyuló szarva van, ami környezetük hatására változik. 
+				 </p>
+				<h2> Kinézetek</h2>
+				 <table>
+					<tr>
+						<td><img class="lilleg" src="lilleg/molten1.png" alt="fury1.1"></td>
+						<td><img class="lilleg" src="lilleg/molten2.png" alt="fury1.2"></td>
+						<td><img class="lilleg" src="lilleg/molten3.png" alt="fury1.3"></td>
+					</tr>
+				 </table>
+			</div>
+		</div>
+		<div class="altarolo">
+			<div class="aldiv">
+				<h2>Kísértet</h2>
+				<img class="masodiklegend" src="lilleg/hauntling.png" alt="hauntling">
+				 <p class="lillegszoveg">Az élőholtak utálatos lények, leginkább a Sötét Szigeteken
+				 húzódnak meg, de befolyásuk elért Valoran partjaira az elmúlt évtizedekben.</p>
+				<h2> Kinézetek</h2>
+			<table>
+					<tr>
+						<td><img class="lilleg" src="lilleg/hauntling1.png" alt="haunt1"></td>
+						<td><img class="lilleg" src="lilleg/hauntling2.png" alt="haunt2"></td>
+						<td><img class="lilleg" src="lilleg/hauntling3.png" alt="haunt3"></td>
+					</tr>
+			</table>	 
+			</div>
+			
+		</div>
+		<div class="altarolo">
+			<div class="aldiv">
+				<h2>Ezüstszárnyú</h2>
+				<img class="elsolegend" src="lilleg/silverwing.png" alt="silverwing">
+				 <p class="lillegszoveg"> Ezek a griff-szerű lények Demacia északi szirtjein honos ragadozók,
+					akik szeretnek magányos farmerekre, de esetenként felfegyverzett katonákra is rátámadni.
+				 </p>
+				<h2> Kinézetek</h2>
+				 <table class="lillegborder">
+					<tr>
+						<td><img class="lilleg" src="lilleg/silverwing1.png" alt="silver1"></td>
+						<td><img class="lilleg" src="lilleg/silverwing2.png" alt="silver2"></td>
+						<td><img class="lilleg" src="lilleg/silverwing3.png" alt="silver3"></td>
+					</tr>
+				 </table>
+			</div>
+		</div>
+	</div>
+<div class="valasztf"></div>
+<footer>
+<div class="elerhetosegek">
+<a href="https://www.youtube.com/user/LeagueofLegendsHU" target="_blank"><img class="media" src="multi/youtube.png" alt="youtube" ></a>
+<a href="https://twitter.com/leagueoflegends" target="_blank"><img class="media" src="multi/twitter.png" alt="twitter"></a>
+<a href="https://www.facebook.com/LeagueofLegendsHungary" target="_blank"><img class="media" src="multi/facebook.png" alt="facebook"></a>
+</div>
+<div class="referenciak">
+<a href="https://eune.leagueoflegends.com/hu/news/game-updates/gameplay/teamfight-tactics-gameplay-guide" target="_blank"><img class="media" src="icons/tfticon.png" alt="Tft2"></a>
+<a href="https://leagueoflegends.fandom.com/wiki/Little_Legends_(Teamfight_Tactics)" target="_blank"><img class="media" src="eggs/series5.png" alt="Tft2"></a>
+</div>
+<div class="referencia">Referenciák:</div>
+</footer>	
+</div>
+</body>
+</html>
